@@ -1,0 +1,3 @@
+app-dicts/aspell-en 2016.11.20.0: English (US, British, Canadian) language dictionary for aspell
+dev-libs/zziplib 0.13.62-r2: Lightweight library for extracting data from files archived in a single zip file
+www-misc/monitorix 3.9.0 3.10.0-r1: A lightweight system monitoring tool

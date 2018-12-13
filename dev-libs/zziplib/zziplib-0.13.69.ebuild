@@ -25,8 +25,6 @@ DEPEND="${RDEPEND}
 	test? ( app-arch/zip )"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-0.13.49-SDL-test.patch
-
 	python_fix_shebang .
 
 	# workaround AX_CREATE_PKGCONFIG_INFO bug #353195
@@ -44,6 +42,8 @@ src_prepare() {
 	# Do an out-of-tree build as their configure will do it automatically
 	# otherwise and that can lead to funky errors. #492816
 	mkdir -p build
+
+	eapply_user 
 }
 
 src_configure() {

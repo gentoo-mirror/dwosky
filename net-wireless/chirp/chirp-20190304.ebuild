@@ -10,6 +10,7 @@ if [[ ${PV} == "99999999" ]] ; then
 fi
 
 inherit distutils-r1 ${SCM}
+inherit xdg-utils
 
 DESCRIPTION="Free open-source tool for programming your amateur radio"
 HOMEPAGE="http://chirp.danplanet.com"

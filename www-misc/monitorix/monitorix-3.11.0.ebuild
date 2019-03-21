@@ -43,7 +43,7 @@ src_compile() { :; }
 src_install() {
 	dosbin ${PN}
 
-	newinitd "${FILESDIR}"/${PN}.init ${PN}
+	newinitd docs/${PN}.init ${PN}
 
 	insinto /etc/monitorix
 	doins ${PN}.conf

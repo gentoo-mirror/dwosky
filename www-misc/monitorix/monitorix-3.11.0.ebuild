@@ -34,6 +34,8 @@ src_prepare() {
 	sed -e "s|\(base_dir.*\)/usr/share/${PN}|\1/usr/share/${PN}/htdocs|" \
 		-e "s|\(secure_log.*\)/var/log/secure|\1/var/log/auth.log|" \
 		-e "s|nobody|${PN}|g" -i ${PN}.conf || die
+	# Update systemd binary location
+	sed -e "s|/usr/bin|/usr/sbin|g" -i docs/${PN}.service
 	eapply_user
 }
 
@@ -43,7 +45,7 @@ src_compile() { :; }
 src_install() {
 	dosbin ${PN}
 
-	newinitd docs/${PN}.init ${PN}
+	newinitd ${FILESDIR}/monitorix ${PN}
 
 	insinto /etc/monitorix
 	doins ${PN}.conf

@@ -16,6 +16,9 @@ KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-ma
 IUSE="doc examples"
 
 python_prepare_all() {
+	# Remove python2 print statement
+	echo > Lib/__init__.py || die
+	
 	distutils-r1_python_prepare_all
 }
 

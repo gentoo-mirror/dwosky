@@ -3,6 +3,3 @@
 # * generated automatically using pmaint *
 
 net-wireless/chirp:radioreference - support downloading data from radioreference.com (premium users only)
-www-misc/monitorix:apcupsd - Make use of a daemon that controls APC UPSes with sys-power/apcupsd.
-www-misc/monitorix:httpd - Enables the CGI webserver with any package that satisfies virtual/httpd-cgi.
-www-misc/monitorix:postfix - Analyze postfix logs with net-mail/pflogsumm.

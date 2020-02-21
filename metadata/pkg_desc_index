@@ -1,3 +1,5 @@
+acct-group/monitorix 0: Monitorix system tool group
+acct-user/monitorix 0: Monitorix system tool user
 app-dicts/aspell-en 2016.11.20.0 2017.01.22.0 2018.04.16.0: English (US, British, Canadian) language dictionary for aspell
 dev-libs/zziplib 0.13.62-r2 0.13.69: Lightweight library for extracting data from files archived in a single zip file
 dev-python/pycxx 7.1.3: Set of facilities to extend Python with C++

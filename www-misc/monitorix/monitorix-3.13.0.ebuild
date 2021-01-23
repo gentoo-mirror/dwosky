@@ -77,19 +77,9 @@ src_install() {
 }
 
 pkg_postinst() {
-	if has_version '<=www-misc/monitorix-3.5.1' ; then
-		ewarn "WARNING: ${PN} has changed its config format twice, in versions"
-		ewarn "3.0.0 and 3.4.0; this format may be incompatible with your existing"
-		ewarn "config file. Please take care if upgrading from an old version."
-		ewarn
-		elog "${PN} includes its own web server as of version 3.0.0."
-		elog "For this reason, the dependency on the webapp framework"
-		elog "has been removed."
-		elog
-	fi
 	elog "Optional dependencies:"
-	optfeature "Disk drive temperatures and health" app-admin/hddtemp
-	optfeature "Eemail reports/statics" mail-mta/postfix mail-mta/sendmail
+	optfeature "disk drive temperatures and health" app-admin/hddtemp
+	optfeature "email reports/statics" mail-mta/postfix mail-mta/sendmail
 	optfeature "lm-sensors and GPU temperatures" sys-apps/lm-sensors
 	optfeature "APC UPS statistics" sys-power/apcupsd
 	optfeature "Network UPS Tools statistics" sys-power/nut

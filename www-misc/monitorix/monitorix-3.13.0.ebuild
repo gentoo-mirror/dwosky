@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit systemd
+inherit systemd optfeature
 
 DESCRIPTION="A lightweight system monitoring tool"
 HOMEPAGE="https://www.monitorix.org/"

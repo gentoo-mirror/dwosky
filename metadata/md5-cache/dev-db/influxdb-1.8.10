@@ -1,0 +1,16 @@
+BDEPEND=man? ( app-text/asciidoc app-text/xmlto ) >=dev-lang/go-1.16 app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile install test unpack
+DEPEND=acct-group/influxdb acct-user/influxdb
+DESCRIPTION=Scalable datastore for metrics, events, and real-time analytics
+EAPI=8
+HOMEPAGE=https://www.influxdata.com
+INHERIT=go-module systemd
+IUSE=man
+KEYWORDS=~amd64
+LICENSE=Apache-2.0 BSD BSD-2 EPL-2.0 ISC MIT MPL-2.0
+RDEPEND=acct-group/influxdb acct-user/influxdb
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/influxdata/influxdb/archive/v1.8.10.tar.gz -> influxdb-1.8.10.tar.gz https://github.com/Dwosky/Dwosky.github.io/raw/main/influxdb-1.8.10-deps.tar.xz
+_eclasses_=go-module	a13d34fe4e2996720e1ca6c53b9ea95a	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	systemd	2736b403a83f194b59b767f3b344c2c1
+_md5_=c07c305b03bae025fbb23dfebccf678c

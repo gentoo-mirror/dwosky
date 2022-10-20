@@ -36,6 +36,7 @@ RDEPEND="
 "
 
 src_configure() {
+	cmake_src_prepare
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX=/usr ..
     )

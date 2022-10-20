@@ -20,6 +20,10 @@ DEPEND="
     >=dev-libs/libbaseencode-1.0.6
 "
 
+src_prepare() {
+    cmake_src_prepare
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX:PATH=/usr ../

@@ -19,6 +19,10 @@ DEPEND="
     >=dev-util/cmake-3.8.2
 "
 
+src_prepare() {
+	cmake_src_prepare
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX:PATH=/usr ../

@@ -8,6 +8,7 @@ inherit autotools cmake xdg-utils
 DESCRIPTION="Simple GTK+ v3 OTP client (TOTP and HOTP)"
 HOMEPAGE="https://github.com/paolostivanin/OTPClient"
 SRC_URI="https://github.com/paolostivanin/OTPClient/archive/v${PV}.zip -> ${P}.zip"
+S="${WORKDIR}/OTPClient-${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -35,8 +36,11 @@ RDEPEND="
 	>=media-libs/libpng-1.2.0
 "
 
-src_configure() {
+src_prepare() {
 	cmake_src_prepare
+}
+
+src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX=/usr ..
     )

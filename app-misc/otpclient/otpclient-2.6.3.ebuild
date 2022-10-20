@@ -21,6 +21,7 @@ DEPEND="
     >=dev-util/cmake-3.8.2
 	>=dev-libs/libbaseencode-1.0.2
 	>=dev-libs/libcotp-1.0.10
+	>=dev-libs/protobuf-c-1.3.0
 	>=media-gfx/zbar-0.10
 "
 

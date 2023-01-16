@@ -2,4 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-net-wireless/chirp:radioreference - support downloading data from radioreference.com (premium users only)

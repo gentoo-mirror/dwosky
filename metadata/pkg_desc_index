@@ -1,5 +1,6 @@
 acct-group/monitorix 0: Monitorix system tool group
 acct-user/monitorix 0: Monitorix system tool user
+app-editors/pulsar-bin 1.102.0: A Community-led Hyper-Hackable Text Editor
 app-misc/otpclient 2.6.3: Simple GTK+ v3 OTP client (TOTP and HOTP)
 dev-db/influxdb 1.8.10: Scalable datastore for metrics, events, and real-time analytics
 dev-libs/libbaseencode 1.0.14: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)

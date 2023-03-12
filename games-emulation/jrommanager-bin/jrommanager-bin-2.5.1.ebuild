@@ -18,15 +18,17 @@ BDEPEND=""
 
 MY_PN="${PN/-bin/}"
 DESTDIR="/opt/JRomManager"
-S="${WORKDIR}/${MY_PN^}"
+S="${WORKDIR}"
 
 src_unpack() {
   unpack_zip ${P}.zip
 }
 
 src_install() {
-  doicon -s 256 "rom.png"
-  make_desktop_entry "java -jar ${DESTDIR}/JRomManager.jar" JRomManager rom "Games"
+  dodir $DESTDIR
+  cp -r "${S}/" "${DESTDIR}/" || die "Install failed!"
+  doicon -s 256 "${FILESDIR}/rom.png"
+  make_desktop_entry "${DESTDIR}/JRomManager.sh" JRomManager rom "Games"
 }
 
 pkg_postinst() {

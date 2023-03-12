@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/peter/JDownloader/themes/standard/org/jdownloader/images/logo/icon.ico
+Name=JDownloader
+Categories=Network;
+Exec=/opt/jdk-11.0.5/bin/java -jar /home/peter/JDownloader/JDownloader.jar
+Path=/home/peter/JDownloader
+StartupNotify=true
+Terminal=false

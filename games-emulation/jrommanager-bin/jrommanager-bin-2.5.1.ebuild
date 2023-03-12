@@ -25,10 +25,12 @@ src_unpack() {
 }
 
 src_install() {
-  dodir $DESTDIR
-  cp -r "${S}/" "${DESTDIR}/" || die "Install failed!"
+  insinto $DESTDIR
+  exeinto $DESTDIR
+  doexe *.sh
+  doins -r *
   doicon -s 256 "${FILESDIR}/rom.png"
-  make_desktop_entry "${DESTDIR}/JRomManager.sh" JRomManager rom "Games"
+  make_desktop_entry "${DESTDIR}/JRomManager.sh" JRomManager rom "Game"
 }
 
 pkg_postinst() {

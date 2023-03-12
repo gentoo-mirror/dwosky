@@ -30,7 +30,7 @@ src_install() {
   doexe *.sh
   doins -r *
   doicon -s 256 "${FILESDIR}/rom.png"
-  make_desktop_entry "${DESTDIR}/JRomManager.sh" JRomManager rom "Game"
+  make_desktop_entry "java -jar ${DESTDIR}/JRomManager.jar" JRomManager rom "Game"
 }
 
 pkg_postinst() {

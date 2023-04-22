@@ -5,7 +5,7 @@ app-misc/otpclient 2.6.3: Simple GTK+ v3 OTP client (TOTP and HOTP)
 dev-db/influxdb 1.8.10: Scalable datastore for metrics, events, and real-time analytics
 dev-libs/libbaseencode 1.0.14: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
 dev-libs/libcotp 1.2.6: C library that generates TOTP and HOTP
-dev-python/python-telegram-bot 20.2: This library provides a pure Python, asynchronous interface for the Telegram Bot API
+dev-python/python-telegram-bot 20.2: Python wrapper of telegram bots API
 dev-python/yattag 1.15.0: Python library to generate HTML or XML in a readable, concise and pythonic way.
 games-emulation/jrommanager-bin 2.5.1: Java Rom Manager
 net-wireless/chirp-next 20230116: Free open-source tool for programming your amateur radio

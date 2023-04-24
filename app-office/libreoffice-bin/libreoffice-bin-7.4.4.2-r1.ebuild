@@ -197,7 +197,7 @@ REQUIRED_USE="kde? ( !gnome ) gnome? ( !kde ) ${PYTHON_REQUIRED_USE}"
 
 RESTRICT="test strip"
 
-S="${WORKDIR}"
+S="${WORKDIR}/${PN}-${PV}"
 
 PYTHON_UPDATER_IGNORE="1"
 

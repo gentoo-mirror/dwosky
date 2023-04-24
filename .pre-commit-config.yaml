@@ -18,5 +18,5 @@ repos:
         name: generate manifest
         language: system
         files: ebuild
-        entry: pkgdev manifest
+        entry: pkgdev manifest -f
 ...

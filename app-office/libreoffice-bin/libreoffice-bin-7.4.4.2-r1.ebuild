@@ -15,7 +15,7 @@ inherit java-pkg-opt-2 python-single-r1 prefix toolchain-funcs xdg-utils
 DESCRIPTION="A full office productivity suite. Binary package"
 HOMEPAGE="https://www.libreoffice.org"
 SRC_URI_AMD64="
-	${BASE_AMD64_URI}libreoffice-${PV}.tar.xz
+	${BASE_AMD64_URI}libreoffice-${PV}.tar.xz -> ${P}.tar.gz
 	kde? (
 		!java? ( ${BASE_AMD64_URI}libreoffice-kde-${PV}.xd3 )
 		java? ( ${BASE_AMD64_URI}libreoffice-kde-java-${PV}.xd3 )
@@ -29,7 +29,7 @@ SRC_URI_AMD64="
 	) )
 "
 SRC_URI_X86="
-	${BASE_X86_URI}libreoffice-${PV}.tar.xz
+	${BASE_X86_URI}libreoffice-${PV}.tar.xz -> ${P}.tar.gz
 	kde? (
 		${BASE_X86_URI}libreoffice-kde-${PV}.xd3
 	)

@@ -1,6 +1,5 @@
 acct-group/monitorix 0: Monitorix system tool group
 acct-user/monitorix 0: Monitorix system tool user
-app-editors/pulsar-bin 1.106.0: A Community-led Hyper-Hackable Text Editor
 app-misc/otpclient 2.6.3: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-office/libreoffice-bin 7.4.4.2-r1: A full office productivity suite. Binary package
 dev-db/influxdb 1.8.10: Scalable datastore for metrics, events, and real-time analytics

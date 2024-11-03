@@ -1,0 +1,4 @@
+# User that will run the ntfy server daemon
+NTFY_USER="ntfy:ntfy"
+# Extra args to pass to the daemon
+NTFY_ARGS="--log-file value /var/log/ntfy.log"

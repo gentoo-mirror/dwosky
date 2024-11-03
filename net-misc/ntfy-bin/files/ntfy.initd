@@ -1,0 +1,30 @@
+#!/sbin/openrc-run
+# Copyright 2024 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="ntfy server"
+description="ntfy daemon for server mode"
+command=/usr/bin/ntfy
+command_args="serve ${NTFY_ARGS}"
+
+depend() {
+  need net
+}
+
+start() {
+  local pidfile=/var/run/ntfy-server.pid
+  ebegin "Starting ntfy server"
+  start-stop-daemon --user "${NTFY_USER}"  \
+                    --pidfile "${pidfile}" \
+                    --make-pidfile         \
+                    --background           \
+                    --exec ${command} "${command_args}"
+  eend ?
+}
+
+stop() {
+  ebegin "Stopping ntfy server"
+  start-stop-daemon --stop                             \
+                    --user "${NTFY_USER}"              \
+                    --pidfile /var/run/ntfy-server.pid
+}

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=acct-group/ntfy acct-user/ntfy
+DESCRIPTION=Send push notifications to your phone or desktop using PUT/POST
+EAPI=8
+HOMEPAGE=https://ntfy.sh/
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=acct-group/ntfy acct-user/ntfy
+SLOT=0
+SRC_URI=https://github.com/binwiederhier/ntfy/releases/download/v2.11.0/ntfy_2.11.0_linux_amd64.tar.gz -> ntfy-bin-2.11.0.tar.gz
+_md5_=554fa8ffdd9300d40f03b78b40b25d44

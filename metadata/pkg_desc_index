@@ -5,12 +5,10 @@ app-office/libreoffice-bin 7.4.4.2-r1: A full office productivity suite. Binary 
 dev-libs/libbaseencode 1.0.14: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
 dev-libs/libcotp 1.2.6: C library that generates TOTP and HOTP
 dev-python/python-telegram-bot 20.2 20.3 20.6: Python wrapper of telegram bots API
-dev-python/yattag 1.15.0: Python library to generate HTML or XML in a readable, concise and pythonic way.
 games-emulation/jrommanager-bin 2.5.1: Java Rom Manager
 media-fonts/hack-nerdfont 3.0.2: Typeface designed for source code
 media-gfx/inkscape 1.2.1-r2: SVG based generic vector-drawing program
 media-libs/lensfun 0.3.3: Library for rectifying and simulating photographic lens distortions
 net-analyzer/telegraf-bin 1.34.1: Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.
 net-misc/ntfy-bin 2.11.0: Send push notifications to your phone or desktop using PUT/POST
-net-wireless/chirp-next 20230116: Free open-source tool for programming your amateur radio
 x11-misc/menumaker 0.99.12: Utility that scans through the system and generates a menu of installed programs

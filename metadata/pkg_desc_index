@@ -1,9 +1,9 @@
 acct-group/ntfy 0: ntfy server group
 acct-user/ntfy 0: ntfy server user
-app-misc/otpclient 2.6.3: Simple GTK+ v3 OTP client (TOTP and HOTP)
+app-misc/otpclient 4.0.2: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-office/libreoffice-bin 7.4.4.2-r1: A full office productivity suite. Binary package
 dev-libs/libbaseencode 1.0.14: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
-dev-libs/libcotp 1.2.6: C library that generates TOTP and HOTP
+dev-libs/libcotp 3.1.0: C library that generates TOTP and HOTP
 dev-python/python-telegram-bot 20.2 20.3 20.6: Python wrapper of telegram bots API
 games-emulation/jrommanager-bin 2.5.1: Java Rom Manager
 media-fonts/hack-nerdfont 3.0.2: Typeface designed for source code

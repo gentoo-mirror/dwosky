@@ -19,7 +19,6 @@ RESTRICT="mirror"
 DEPEND="
   sys-devel/gcc
   dev-build/cmake
-	>=dev-libs/libbaseencode-1.0.2
 	>=dev-libs/libcotp-3.0.0
 	>=dev-libs/protobuf-c-1.3.0
 	>=media-gfx/zbar-0.10

@@ -17,8 +17,7 @@ IUSE=""
 DEPEND="
 	sys-devel/gcc
   dev-build/cmake
-	>=dev-libs/libgcrypt-1.8.0
-	>=dev-libs/openssl-3.0.0
+	|| ( >=dev-libs/libgcrypt-1.8.0 >=dev-libs/openssl-3.0.0 )
 "
 
 src_prepare() {

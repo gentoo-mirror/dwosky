@@ -7,5 +7,6 @@ games-emulation/jrommanager-bin 2.5.1: Java Rom Manager
 media-fonts/hack-nerdfont 3.0.2: Typeface designed for source code
 media-gfx/inkscape 1.2.1-r2: SVG based generic vector-drawing program
 media-libs/lensfun 0.3.3: Library for rectifying and simulating photographic lens distortions
+media-radio/chirp-next 20250912: Free open-source tool for programming your amateur radio
 net-analyzer/telegraf-bin 1.34.1: Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.
 net-misc/ntfy-bin 2.11.0: Send push notifications to your phone or desktop using PUT/POST
